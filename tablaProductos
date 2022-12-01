@@ -1,1 +1,253 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <title>Sweet & Candy</title>
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   
+  </head>
+   <body>
+    <header class="main-header">
+      <div class="conteiner conteiner--flex">
+        <div class="main-header__conteiner">
+          <h1 class="title">SWEET & CANDY</h1>
+          <span class="icon-menu fa-solid fa-bars" id="btn-menu"></span>
+          <nav class="main-nav" id="main-nav">
+            <ul class="menu">
+              <li class="menu__item">HOME<a href="" class="menu__link"></a></li>
+              <li class="menu__item">ABOUT<a href="" class="menu__link"></a></li>
+              <li class="menu__item">FEACTURES<a href="" class="menu__link"></a></li>
+              <li class="menu__item">SHOP<a href="" class="menu__link"></a></li>
+              <li class="menu__item">CONTACT<a href="" class="menu__link"></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-header__container">
+          <span class="main-header__txt">Need Help</span>
+          <p class="main-header__txt"><i class="fa-solid fa-phone"></i> Call +52 449 363 35 49</p>
+        </div>
+        <div class="main-header__container">
+          <i class="fa-solid fa-user"></i>
+          <a href="" class="main-header__btn">My cart<i class="fa-solid fa-cart-shopping"></i></a>
+          <input type="search" class="main-header__input" placeholder="Buscar productos"><i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </header>
+    <br><br>
+    <div class="container-slider">
+      <div class="slider" id="slider">
+        <div class="slider__section">
+          <img src="imagen/banner1.jpg" alt="" class="slider__img">
+          <div class="slider__content">
+            <h2 class="slider__title">Sweet and Candy</h2>
+            <p class="slider__txt">Endulzamos tu vida</p>
+            <a href="" class="slider__section-btn"> SHOP NOW</a>
+          </div>
+        </div>
+        <div class="slider__section">
+          <img src="imagen/banner2.jpg" alt="" class="slider__img">
+          <div class="slider__content">
+            <h2 class="slider__title">Sweet and Candy</h2>
+            <p class="slider__txt">Endulzamos tu vida</p>
+            <a href="" class="slider__section-btn"> SHOP NOW</a>
+          </div>
+        </div>
+        <div class="slider__section">
+          <img src="imagen/banner3.jpg" alt="" class="slider__img">
+          <div class="slider__content">
+            <h2 class="slider__title">Sweet and Candy</h2>
+            <p class="slider__txt">Endulzamos tu vida</p>
+            <a href="" class="slider__section-btn"> SHOP NOW</a>
+          </div>
+        </div>
+        <div class="slider__section">
+          <img src="imagen/banner4.jpg" alt="" class="slider__img">
+          <div class="slider__content">
+            <h2 class="slider__title">Sweet and Candy</h2>
+            <p class="slider__txt">Endulzamos tu vida</p>
+            <a href="" class="slider__section-btn"> SHOP NOW</a>
+          </div>
+        </div>
+        <div class="slider__section">
+          <img src="imagen/banner5.jpg" alt="" class="slider__img">
+          <div class="slider__content">
+            <h2 class="slider__title">Sweet and Candy</h2>
+            <p class="slider__txt">Endulzamos tu vida</p>
+            <a href="" class="slider__section-btn"> SHOP NOW</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+      <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+    </div>
+    <main class="main">
+      <div class="container">
+        <H2 class="main title">New Cakes For you</H2>
+        <section class="container-products">
+            <div class="product">
+              <img src="imagen/Pastel1.jpg" alt="" class="product__img" width="200px" height="300px">
+              <div class="product__description">
+                <h3 class="product__title">Father Cake</h3>
+                <span class="product__price">$600.00</span>
+              </div>
+              <i class="product__icon fa-regular fa-heart"></i><i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="product">
+              <img src="imagen/Pastel2.jpg" alt="" class="product__img" width="200px" height="300px">
+              <div class="product__description">
+                <h3 class="product__title">Baby Cake</h3>
+                <span class="product__price">$500.00</span>
+              </div>
+              <i class="product__icon  fa-regular fa-heart"></i><i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="product">
+              <img src="imagen/Pastel3.jpg" alt="" class="product__img" width="200px" height="300px">
+              <div class="product__description">
+                <h3 class="product__title">Flamenco Cake</h3>
+                <span class="product__price">$700.00</span>
+              </div>
+              <i class="product__icon fa-regular fa-heart"></i><i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="product">
+              <img src="imagen/Pastel4.jpg" alt="" class="product__img" width="200px" height="300px">
+              <div class="product__description">
+                <h3 class="product__title">Super Mario Cake</h3>
+                <span class="product__price">$800.00</span>
+              </div>
+              <i class="product__icon fa-regular fa-heart"></i><i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="product">
+              <img src="imagen/Pastel5.jpg" alt="" class="product__img" width="200px" height="300px">
+              <div class="product__description">
+                <h3 class="product__title">Baby Bubble Cake</h3>
+                <span class="product__price">$500.00</span>
+              </div>
+              <i class="product__icon fa-regular fa-heart"></i><i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="product">
+              <img src="imagen/Pastel6.jpg" alt="" class="product__img" width="200px" height="300px">
+              <div class="product__description">
+                <h3 class="product__title">Pink Cake</h3>
+                <span class="product__price">$400.00</span>
+              </div>
+              <i class="product__icon fa-regular fa-heart"></i><i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="product">
+              <img src="imagen/Pastel7.jpg" alt="" class="product__img" width="200px" height="300px">
+              <div class="product__description">
+                <h3 class="product__title">Our History Cake</h3>
+                <span class="product__price">$1000.00</span>
+              </div>
+              <i class="product__icon fa-regular fa-heart"></i><i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="product">
+              <img src="imagen/Pastel8.jpg" alt="" class="product__img" width="200px" height="300px">
+              <div class="product__description">
+                <h3 class="product__title">Birthday Blue Cake</h3>
+                <span class="product__price">$600.00</span>
+              </div>
+              <i class="product__icon fa-regular fa-heart"></i><i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="product">
+              <img src="imagen/Pastel9.jpg" alt="" class="product__img" width="200px" height="300px">
+              <div class="product__description">
+                <h3 class="product__title">Blue Ocean Cake</h3>
+                <span class="product__price">$720.00</span>
+              </div>
+              <i class="product__icon fa-regular fa-heart"></i><i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="product">
+              <img src="imagen/Pastel10.jpg" alt="" class="product__img" width="200px" height="300px">
+              <div class="product__description">
+                <h3 class="product__title">Pink Birthday Cake</h3>
+                <span class="product__price">$890.00</span>
+              </div>
+              <i class="product__icon fa-regular fa-heart"></i><i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </section>
+      </div>
 
+      <section class="container__testimonials">
+        <h2 class="section__title">Opinions</h2>
+        <h3 class="testtimonial__title">Mauricio Arellano</h3>
+        <p class="testimonial__txt">Los pasteles estan muy ricos, además de que las decoraciones
+          son muy bonitas y llamativas. El trato que recibes es muy bueno. Además de que sus 
+          precios son muy accesibles a tus necesidades.
+        </p>
+      </section>
+
+      <div class="container-editor">
+        <div class="editor__item">
+          <img src="imagen/parteb3.jpeg" alt="" class="editor__img">
+          <p class="editor__circle">Welcome to a sweet and colorful world!</p>
+        </div>
+        <div class="editor__item">
+          <img src="imagen/parteb2.jpeg" alt="" class="editor__img">
+          <p class="editor__circle">Welcome to a sweet and colorful world!</p>
+        </div>
+      </div>
+
+      <section class="container-tips">
+        <div class="tip">
+          <i class="fa-solid fa-hand"></i>
+          <h2 class="tip__title">Satisfaction Guaranteed</h2>
+          <p class="tip__txt">Duis mollis, est non commodo luctus,
+            nisi erat porttion ligula, eget lacnia odio sem nec elit.
+          </p>
+          <a href="" class="slider__section-btn">SHOP NOW</a>
+        </div>
+        <div class="tip">
+          <i class="fa-solid fa-rocket"></i>
+          <h2 class="tip__title">Fast Shipping</h2>
+          <p class="tip__txt">Duis mollis, est non commodo luctus,
+            nisi erat porttion ligula, eget lacnia odio sem nec elit.</p>
+          <a href="" class="slider__section-btn">SHOP NOW</a>
+        </div>
+        <div class="tip">
+          <i class="fa-solid fa-gear"></i>
+          <h2 class="tip__title">Colorful cake</h2>
+          <p class="tip__txt">Duis mollis, est non commodo luctus,
+            nisi erat porttion ligula, eget lacnia odio sem nec elit.</p>
+          <a href="" class="slider__section-btn">SHOP NOW</a>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="footer__section">
+        <h2 class="footer__title">About Us</h2>
+        <p class="footer__txt">Si gustas conocer más sobre nosostros puedes ingresar 
+          a nuestras redes sociales y conocer más promociones e información acerca de 
+          nuestros servicios.
+        </p>
+        <a href="https://www.facebook.com/valdiviacecy"><i class="fa-brands fa-facebook"></i></a>
+        &nbsp&nbsp<a href="https://www.instagram.com/pastelesweetandcandy/"><i class="fa-brands fa-instagram"></i></a>
+          &nbsp&nbsp&nbsp<a href="https://www.tiktok.com/@pastelsweetandcandy"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+      <div class="footer__section">
+        <h2 class="footer__title">Get in touch</h2>
+        <p class="footer__txt">Location: Circuito Perico #530 , Aguascalientes, Mexico
+          <br>Contact: 449 230 4436 
+          <br>Email: cecyvaldivia83@hotmail.com
+        </p>
+      </div>
+      <div class="footer__section">
+        <h2 class="footer__title">Quick links</h2>
+        <a href="" class="footer__link">Home</a></p>
+        <a href="" class="footer__link">About</a></p>
+        <a href="" class="footer__link">Error</a></p>
+        <a href="" class="footer__link">Contact</a></p>
+      </div>
+      <div class="footer__section">
+        <h2 class="footer__title">Sign up for your offer</h2>
+        <p class="footer__txt">By subscribing to our mailing list you will always get latest news
+          and updates from us. </p>
+          <input type="email" class="footer__input" placeholder="Enter your Email">
+      </div>
+    </footer>
+    <p class="copy"> © 2022 Sweet & Candy. All Rights Reserved | Design By Sweet & Candy</p>
+
+    <script src="js/slider.js"></script>
+   </body>
+</html>
