@@ -1,0 +1,351 @@
+@font-face {
+  font-family: "Inconsolata";
+  src: url(../font/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../font/Poppins-Bold.ttf);
+}
+
+* {
+box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: "Inconsolata";
+  background-color: bisque;
+}
+
+/*Estilos para el header*/
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.main-header {
+  padding: 0 20px;  
+}
+
+.title{
+  text-align: center;
+  font-size: 2.5em;
+  margin: 10px 0;
+  color: #454546;
+  font-family: "Poppins";
+}
+
+.main-nav{
+  display: none;
+}
+
+.main-header__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-menu{
+  font-size: 1.5em;
+  border: 1px solid #454546;
+  display: block;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.main-header__btn{
+  display: block;
+  padding: 10px 30px;
+  color: #454546;
+  border: 1px solid #454546;
+  text-decoration: none;
+}
+
+.main-header__input{
+  display: block;
+  padding: 10px;
+  width: 50%;
+}
+
+.main{
+  padding: 0 20px;
+}
+
+/*Estilos del Slider*/
+
+.container-slider{
+  margin: 50px 0;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider{
+  display: flex;
+  width: 500%; /*Depende de la cantidad de imagenes*/
+  height: 400px;
+  margin-left: -100%;
+  position: relative;
+}
+
+.slider::before{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  height: 100%;
+}
+
+.slider__section{
+  width: 100%;
+  position: relative;
+}
+
+.slider__img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__btn{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: rgb(255, 255, 255, 0.7);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.slider__btn:hover{
+  background: #fff;
+}
+
+.slider__btn--left{
+left: 10px;
+}
+
+.slider__btn--right{
+  right: 10px;
+}
+
+.slider__content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  text-align: center;
+  z-index: 999;
+}
+
+.slider__title{
+  font-size: 2.2em;
+  margin: 0;
+}
+
+.slider__text{
+  margin: 5px 0;
+}
+
+.slider__section-btn{
+  display: block;
+  border: 2px solid #FF4E00;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 150px;
+  margin: 20px auto;
+}
+
+/* Estilos de productos*/
+
+.container-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  background: #fff;
+}
+
+.product::before{
+  content: "New";
+  background: #FF4E00;
+  padding: 10px;
+  width: 60px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  transform: rotate(-90deg);
+  color:wheat;
+}
+
+.product__title{
+  text-align: center;
+}
+
+.product__price{
+  color: #FF4E00;
+  font-weight: bold;
+}
+
+.product__icon{
+  display: block;
+  margin: 20px 0;
+}
+
+/*Estilos para opiniones*/
+
+.container__testimonials{
+  text-align: center;
+  background: #f7f7f7;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.testimonials__txt{
+  color: #777;
+}
+
+/*Estilos para colecciones*/
+
+.container-editor{
+  margin-top: 20px;
+}
+
+.editor__item{
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.editor__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.editor__circle{
+  width: 200px;
+  height: 200px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -200px;
+  right: -150px;
+  color: wheat;
+  padding: 20px;
+  padding-bottom: 70px;
+  padding-right: 50px;
+  font-size: 1.1em;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.editor__item:hover .editor__circle{
+  transform: scale(1.2);
+  bottom: -90px;
+  right: -50px;
+}
+
+.editor__item:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.4);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.editor__item:hover:before {
+  opacity: 1;
+}
+
+/*Estilos para tips*/
+.container-tips{
+  margin: 20px 0;
+  text-align: center;
+  background: #f7f7f7;
+  padding: 20px;
+}
+
+.tip i{
+  font-size: 2em;
+  color: #333;
+  padding: 20px 0;
+}
+
+.tip .slider__section-btn{
+  color: #333;
+}
+
+/*Estilos para el footer*/
+
+.main-footer{
+  background: #151515;
+  color: white;
+  padding: 30px 20px;
+}
+
+.footer__txt{
+  color: #555;
+}
+
+.footer__link{
+  color: #555;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+
+.footer__input{
+  background: #151515;
+  width: 100%;
+  display: block;
+  padding: 20px;
+  border: 1px solid #555;
+  color: #555;
+}
+
+.copy{
+  color: #555;
+  text-align: center;
+}
+
+.footer__title{
+  border-bottom: 1px dotted #555;
+  padding-bottom: 20px;
+}
+
+.main-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
