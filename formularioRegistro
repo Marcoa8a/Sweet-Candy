@@ -17,6 +17,11 @@
         <!-- Estilos de la página-->
         <link rel="stylesheet" href="css/styles.css">
         
+        <script>
+            function alerta(){
+                alert("Registro existoso");
+            }
+        </script>
     </head>
 
     <body class="bodylogin">
@@ -43,7 +48,8 @@
 
             <label></label>
         
-            <a class="fcc-btn" href="index.html">Registrar</a>
+            <a class="fcc-btn" onclick="alerta()" href="index.html">Registrar</a>
+            
             </form>
         </section>
     </body>
