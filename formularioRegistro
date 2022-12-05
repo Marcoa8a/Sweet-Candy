@@ -48,7 +48,7 @@
 
             <label></label>
         
-            <a class="fcc-btn" onclick="alerta()" href="index.html">Registrar</a>
+            <a class="fcc-btn" onclick="alerta()" href="login.html">Registrar</a>
             
             </form>
         </section>
