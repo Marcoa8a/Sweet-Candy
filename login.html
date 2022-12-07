@@ -16,6 +16,16 @@
         <title>Inicio de sesión</title>
         <!-- Estilos de la página-->
         <link rel="stylesheet" href="css/styles.css">
+
+        <script>
+            function loginU(){
+                if (usuario == Marco && password == 12345) {
+                alert("Datos correctos");
+                } else {
+                alert("Datos incorrectos");
+                }
+            }
+        </script>
         
     </head>
 
@@ -38,7 +48,7 @@
                 <span>Recordar</span>
             </div>
 
-            <a class="fcc-btn" href="indexSesion.html"><center>Ingresar</center></a>
+            <a class="fcc-btn" onclick="loginU()" href="indexSesion.html"><center>Ingresar</center></a>
             <label for="space"></label>
             <a class="fcc-btn" href="formularioRegistro.html"><center>Crear Cuenta</center></a>
             </form>
