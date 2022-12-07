@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Sweet & Candy</title>
+    <link rel="stylesheet" href="estilosCat.css">
+
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="conteiner conteiner--flex">
+            <div class="main-header__conteiner">
+                <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <a href="index.html" class="enlace">
+                        <img src="logo.jpg" alt="Logo de la tienda" title="Logo" class="logo">
+                    </a>
+                    <ul>
+                        <li><a class="active" href="index.html">Inicio</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="login.html">Iniciar Sesión</a><i class="fa-solid fa-user"
+                                style="color: white; border-radius: 20px;"></i></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <form method="post" id="perfil">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 toppad">
+                    <div class="panel panel-success"><br>
+                        <h2 class="panel-title">
+                            <center>
+                                <font size="5"><i class='glyphicon glyphicon-user'></i>PERFIL</font>
+                            </center>
+                        </h2>
+                        <div class="panel-body">
+                            <div class="row">
+
+                                <div class=" col-lg-9 col-lg-9 ">
+                                    <center>
+                                        <table class="table">
+                                    </center>
+                                    <tbody>
+                                        <tr>
+                                            <td class='col-md-3'>Nombres:</td>
+                                            <td><input class="controlsin" type="text" name="nombre" id="nombre"
+                                                    placeholder="Editar nombre""
+                                                    required></td>
+                                            </tr>
+                                            <tr>
+                                                <td class='col-md-3'>Apellidos:</td>
+                                                <td><input class=" controlsin" type="text" name="apellido"
+                                                    id="apellido" placeholder="Editar apellidos""
+                                                    required></td>
+                                            </tr>
+                                            <tr>
+                                                <td class='col-md-3'>Fecha de nacimiento:</td>
+                                                <td><input class=" controlsin" type="date" name="ocupacion"
+                                                    id="ocupacion" placeholder="Editar edad" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td class='col-md-3'>Correo electrónico:</td>
+                                            <td><input class="controlsin" type="email" name="email" id="email"
+                                                    placeholder="Editar correo electrónico" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td class='col-md-3'>Teléfono:</td>
+                                            <td><input class="controlsin" type="text" name="telefono" id="telefono"
+                                                    placeholder="Editar número de teléfono" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td class='col-md-3'>Ciudad:</td>
+                                            <td><input class="controlsin" type="text" name="ciudad" id="ciudad"
+                                                    placeholder="Editar ciudad" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td class='col-md-3'>Contraseña:</td>
+                                            <td><input class="controlsin" type="password" name="contraseña"
+                                                    id="contraseña" placeholder="Editar contraseña" required></td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                                <div class='col-md-12' id="resultados_ajax"></div><!-- Carga los datos ajax -->
+                            </div>
+                        </div>
+                        <div class="panel-footer text-center">
+                            <button type="submit" class="btnUpdate btn-sm btn-success"><i
+                                    class="glyphicon glyphicon-refresh"></i> Actualizar información</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+</body>
+
+</html>
