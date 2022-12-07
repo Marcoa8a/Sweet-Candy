@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Sweet & Candy</title>
+  <link rel="stylesheet" href="estilosCat.css">
+
+
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="conteiner conteiner--flex">
+      <div class="main-header__conteiner">
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <a href="index.html" class="enlace">
+            <img src="logo.jpg" alt="Logo de la tienda" title="Logo" class="logo">
+          </a>
+          <ul>
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="login.html">Iniciar Sesión</a><i class="fa-solid fa-user"
+                style="color: white; border-radius: 20px;"></i></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="listaDeseos">
+      <h2 class="tituloP">Lista de deseos</h2>
+      <form action="#">
+        <label for="lang">Ordenar por...</label>
+        <select name="lenguajes" id="lang">
+          <option value="selecciona">Selecciona un filtro</option>
+          <option value="nombreA">Nombre A-Z</option>
+          <option value="nombreZ">Nombre Z-A</option>
+          <option value="precio">Precio</option>
+        </select>
+      </form>
+      <section class="productoD">
+        <div class="producto">
+          <img src="https://i.postimg.cc/X71pRz46/Pastel9.jpg" alt="" class="product__img" width="200px" height="300px">
+          <div class="product__description">
+            <h3 class="product__title">Blue Ocean Cake</h3>
+            <span class="product__price">$720.00</span>
+          </div>
+          <i class="product__icon fa-solid fa-heart"></i>
+          <i style="font-size:24px" class="fa">&#xf1f8;</i>
+          <a class="carritoBtn" href="nuevaCat.html">
+            <i class="fa fa-cart-plus"></i>Añadir al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="https://i.postimg.cc/mZN95jPT/Pastel6.jpg" alt="" class="product__img" width="200px" height="300px">
+          <div class="product__description">
+            <h3 class="product__title">Pink Cake</h3>
+            <span class="product__price">$400.00</span>
+          </div>
+          <i class="product__icon fa-solid fa-heart"></i>
+          <i style="font-size:24px" class="fa">&#xf1f8;</i>
+          <a class="carritoBtn" href="nuevaCat.html">
+            <i class="fa fa-cart-plus"></i>Añadir al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="https://i.postimg.cc/NFp5fNXT/Pastel4.jpg" alt="" class="product__img" width="200px" height="300px">
+          <div class="product__description">
+            <h3 class="product__title">Super Mario Cake</h3>
+            <span class="product__price">$800.00</span>
+          </div>
+          <i class="product__icon fa-solid fa-heart"></i>
+          <i style="font-size:24px" class="fa">&#xf1f8;</i>
+          <a class="carritoBtn" href="nuevaCat.html">
+            <i class="fa fa-cart-plus"></i>Añadir al carrito</a>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
