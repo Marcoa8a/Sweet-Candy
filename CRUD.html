@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta name="description" content="Formulario para el registro de clientes para Sweet and Candy"/>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+   <meta name="autor" content="Dulce Madriga, Marco Garcia, Kevin Macias, Edgar Casillas"/>
+   <meta name="Keywords" content="Pasteles, Venta de pasteles, Aguascalientes"/>
+   <meta name="robots" content="index"/>
+   <meta name="copyright" content="Propietario Sweet and Candy" />
+   <meta name="title" content="Sweet & Candy"/>
+
+   <!-- Titulo de la página-->
+   <title>Sweet and Candy</title>
+   <!-- Estilos de la página-->
+   <link rel="stylesheet" href="css/crudstyles.css">
+   <link rel="stylesheet" href="css/styles.css">
+   <!--Iconos-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery-3.6.1.min.js"></script> 
+   <script src="js/jsonCrud.js" ></script>
+   
+  </head>
+   <body>
+    <header class="main-header">
+      <div class="conteiner conteiner--flex">
+        <div class="main-header__conteiner">
+          <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="index.html" class="enlace">
+                <img src="imagen/logo.png" alt="Logo de la tienda" title="Logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="indexAdmin.html">Inicio</a></li>
+                <li><a class="active" href="CRUD.html">CRUD PRODUCTOS</a></li>
+                <li><a href="#">ORDENES</a></li>
+                <li><a href="#">CATEGORIAS</a></li>
+                <li><a href="#">Admin</a><i class="fa-solid fa-user" style="color: white; border-radius: 20px;"></i></li>
+                <li><a href="login.html"><i class="fa-solid fa-arrow-right-from-bracket" style="color: white;"></i></a></li>
+            </ul>
+        </nav>
+        </div>
+        </div>
+      </div>
+    </header>
+    <div class="container"><!-- This element is optional -->
+        <table id="tk-crud-table" class="tk-crud-table">
+        </table>
+      </div>
+   </body>
+</html>
