@@ -1,0 +1,40 @@
+
+  
+  /* This class is optional */
+  .container {
+    margin: 50px auto 25px;
+  }
+  
+  /* This class is optional */
+ 
+  
+  .tk-crud-table {
+    margin: 0 auto; /* This is optional */
+    border-collapse: collapse;
+    width: 90%;
+  }
+  
+  .tk-crud-table > thead > tr > th {
+    background: #730217;
+    height: 30px;
+    line-height: 50px;
+    border: solid 2px #730217;
+    color: #fff;
+  }
+  
+  .tk-crud-table > tbody > tr > td {
+    border: solid 5px #fff;
+    background-color: #fff;
+  }
+  
+  .tk-crud-table > tbody > tr > td.active {
+    outline: solid 3px #730217;
+  }
+  
+  .tk-crud-table > tbody > tr > td > input[type="text"] {
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    border: none;
+    outline: none;
+  }
