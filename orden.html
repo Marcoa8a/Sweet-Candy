@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orden de compra</title>
+<!-- Latest compiled and minified CSS -->
+<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+	integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	crossorigin="anonymous">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+	integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+	crossorigin="anonymous"></script>
+<link href="Orden.css" rel="stylesheet">
+
+</head>
+<body>
+	<!-- Orden de compra -->
+	<div id="ordenCompra">
+		<header>
+			`
+			<div class="container">
+				<div class="col-xs-3 col-md-3">
+					<img alt="logo" src="imagen/logo.png" height="50px;">
+				</div>
+				<div class="col-xs-9 col-md-9">
+					<h4>ORDENES DE COMPRA SWEET AND CANDY</h4>
+					<p id="id_orden">Orden de compra #: 1</p>
+					<p id="fecha">Fecha: 07/12/2022</p>
+					<p>Libertad #114 Col. Centro
+						Aguascalientes.</p>
+				</div>
+			</div>
+		</header>
+		<!-- Cuerpo -->
+		<section>
+			<div class="container">
+				<div class="col-xs-12 col-md-12">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>#id</th>
+								<th>Pastel</th>
+								<th>Precio</th>
+								<th>Factura</th>
+								<th>Total</th>
+								<td>Eliminar</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>PASTEL "EL PADRINO"</td>
+								<td>$450.00</td>
+								<td><a href="FA000001.pdf" download="OrdenCompra">Click para descargar</td></a>
+								<td>$ 130</td>
+								<td><button type="button" class="btn btn-danger">Remover</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+		</section>
+		<!-- Pie -->
+		<footer>
+			<div class="container">
+				<div class="col-xs-5 col-md-5">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>Total a pagar</th>
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>$ 505</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-xs-offset-4 col-xs-3  ">
+					<p style="text-align: center;">Sello</p>
+					<p id="sello"></p>
+					<h6>Para observaciones marcar al 5287270.</h6>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+</body>
+</html>
