@@ -2,94 +2,165 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="estilosCat.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Formulario para el registro de clientes para Sweet and Candy" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="autor" content="Dulce Madriga, Marco Garcia, Kevin Macias, Edgar Casillas" />
+    <meta name="Keywords" content="Pasteles, Venta de pasteles, Aguascalientes" />
+    <meta name="robots" content="index" />
+    <meta name="copyright" content="Propietario Sweet and Candy" />
+    <meta name="title" content="Sweet & Candy" />
+
+    <!--Estilos de la página-->
+    <link rel="stylesheet" href="css/estilosCat.css">
+    <script src="https://kit.fontawesome.com/bcf054aa43.js" crossorigin="anonymous"></script>
+    
+    <!--JS necesarios-->
+    <script src="js/categorias.js"></script>
+
+    <!--Iconos-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- jQuery library -->
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajas/libs/jquary/3.1.1/jquary.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
+    <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-    <title>Sweet & Candy</title>
-    <script src="categorias.js"></script>
-</head>
 
+    <!--Titulo de la página-->
+    <title>Sweet & Candy</title>
+</head>
 <body>
     <header class="main-header">
         <div class="conteiner conteiner--flex">
-            <div class="main-header__conteiner">
-                <nav>
-                    <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn">
-                        <i class="fas fa-bars"></i>
-                    </label>
-                    <a href="index.html" class="enlace">
-                        <img src="logo.jpg" alt="Logo de la tienda" title="Logo" class="logo">
-                    </a>
-                    <ul>
-                        <li><a class="active" href="index.html">Inicio</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="login.html">Iniciar Sesión</a><i class="fa-solid fa-user"
-                                style="color: white; border-radius: 20px;"></i></li>
-                    </ul>
-                </nav>
-            </div>
+          <div class="main-header__conteiner">
+            <nav>
+              <input type="checkbox" id="check">
+              <label for="check" class="checkbtn">
+                  <i class="fas fa-bars"></i>
+              </label>
+              <a href="indexAdmin.html" class="enlace">
+                  <img src="imagen/logo.png" alt="Logo de la tienda" title="Logo" class="logo">
+              </a>
+              <ul>
+                  <li><a href="indexAdmin.html">Inicio</a></li>
+                  <li><a class="active" href="CRUD.html">CRUD PRODUCTOS</a></li>
+                  <li><a href="orden.html">ORDENES</a></li>
+                  <li><a href="nuevaCat.html">CATEGORIAS</a></li>
+                  <li><a href="#">Admin</a><i class="fa-solid fa-user" style="color: white; border-radius: 20px;"></i></li>
+                  <li><a href="login.html"><i class="fa-solid fa-arrow-right-from-bracket" style="color: white;"></i></a></li>
+              </ul>
+          </nav>
+          </div>
+          </div>
         </div>
-        </div>
-    </header>
-        <div class="row">
-            <div class="col-sm-6">
-                <section class="form-register">
-                    <div>
-                        <center><img src="logo.jpg" width="300" height="100"></center>
-                        <center>
-                            <h4>Crear nueva categoria</h4>
-                        </center>
-                        <form id="nuevaCategoria">
-                            <div class="form-group">
-                                <label for="id">ID</label>
-                                <input type="number" class="form-control" id="id" placeholder="Ingresar el ID de la categoria"
-                                required>
-                            </div>
-                            <div class="form-group">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" class="form-control" id="nombre" placeholder="Ingresar el nombre de la categoria"
-                                required>
-                            </div>
-                            <input class="botons" type="submit" value="Registrar">
-                        </form>
-                    </div>
-                </section>
-            </div>
-            <div class="col-sm-6">
-                <section class="form-register">
-                    <div>
-                        <center><img src="logo.jpg" width="300" height="100"></center>
-                        <center><h4>Categorias ingresadas</h4></center>
-                        <div id="tablaCategorias">
-                            <table class="tablaCat">
-                                <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Nombre categoria</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="categoriasTabla">
-                                </tbody>
-                            </table>
+      </header>
+    <div class="row">
+        <div class="col-sm-6">
+            <section class="form-register">
+                <div>
+                    <center><img src="imagen/logo.jpg" width="300" height="100"></center>
+                    <center>
+                        <h4>Crear nueva categoria</h4>
+                    </center>
+                    <form id="nuevaCategoria">
+                        <div class="form-group">
+                            <label for="id">ID</label>
+                            <input type="number" class="form-control" id="id"
+                                placeholder="Ingresar el ID de la categoria" required>
                         </div>
-                        <button class="botons "id="mostrarTabla">Mostrar categorias</button>
-                        <center><a class="fa fa-home" style="font-size:24px" href="index.html"></a></center>
-                    </div>
-                </section>
-            </div>
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre"
+                                placeholder="Ingresar el nombre de la categoria" required>
+                        </div>
+                        <input class="botons" type="submit" value="Registrar">
+                    </form>
+                </div>
+            </section>
         </div>
+        <div class="col-sm-6">
+            <section class="form-register">
+                <div>
+                    <center><img src="imagen/logo.jpg" width="300" height="100"></center>
+                    <center>
+                        <h4>Categorias ingresadas</h4>
+                    </center>
+                    <div id="tablaCategorias">
+                        <table class="tablaCat">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nombre categoria</th>
+                                </tr>
+                            </thead>
+                            <tbody id="categoriasTabla">
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="botons " id="mostrarTabla">Mostrar categorias</button>
+                    <center><a class="fa fa-home" style="font-size:24px" href="indexAdmin.html"></a></center>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="container-fluid mt-5">
+
+        <!-- Footer -->
+        <footer>
+            <div class="container_footer">
+                <div class="box__footer">
+                    <div class="terms">
+                        <br>
+                        <h2>SWEET AND CANDY</h2>
+                        <p>Somos una empresa 100% hidrocálida dedicada a la pastelería y 
+                            repostería en general, brindando a nuestros clientes la mayor
+                            satisfacción en servicio y en sabor.</p>  
+                    </div> 
+                </div>
+                <div class="box__footer">
+                    <ul><h2>Productos</h2>
+                      <a ><li>Pasteles</li></a>
+                      <a ><li>Cupcakes</li></a>
+                      <a ><li>Galletas</li></a>
+                      <a ><li>Mesa de dulces</li></a></ul>
+                </div> 
+  
+                <div class="box__footer">
+                    <h2>Contactanos</h2>
+                    <a><i class="fas fa-home mr-3"></i> Circuito perico #530, Aguascalientes, México</a><br>
+                    <a><i class="fas fa-envelope mr-3"></i> cecyvaldivia83@hotmail.com</a><br>
+                    <a><i class="fas fa-phone mr-3"></i> 449 230 4436</a>
+                </div> 
+  
+  
+            <div class="box__social"> 
+                <div class="box__footer_social"> 
+                    <h2>Redes Sociales</h2>
+                    <a href="https://www.facebook.com/valdiviacecy?mibextid=LQQJ4d"><i class="fa fa-facebook"></i> Facebook</a>
+                    <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+                    <a href="https://instagram.com/pastelesweetandcandy?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i> Instagram</a>   
+                </div> 
+            </div>
+                <div class="box__copyright">
+                    <hr>
+                    <p>Todos los derechos reservados © 2022 <b>Sweet & Candy</b></p>
+                </div>
+            </div>
+            
+        </footer>
+           
+        <!-- Footer -->
+      
+      </div>
 
 </body>
 
