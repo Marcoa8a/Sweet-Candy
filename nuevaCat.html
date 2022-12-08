@@ -2,56 +2,95 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <title>Sweet & Candy</title>
-  <link rel="stylesheet" href="estilosCat.css">
-
+    <link rel="stylesheet" href="estilosCat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajas/libs/jquary/3.1.1/jquary.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <title>Sweet & Candy</title>
+    <script src="categorias.js"></script>
 </head>
 
 <body>
-  <header class="main-header">
-    <div class="conteiner conteiner--flex">
-      <div class="main-header__conteiner">
-        <nav>
-          <input type="checkbox" id="check">
-          <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-          </label>
-          <a href="index.html" class="enlace">
-            <img src="logo.jpg" alt="Logo de la tienda" title="Logo" class="logo">
-          </a>
-          <ul>
-            <li><a class="active" href="index.html">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="login.html">Iniciar Sesión</a><i class="fa-solid fa-user"
-                style="color: white; border-radius: 20px;"></i></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    </div>
-  </header>
-  <section class="form-register">
-    <div>
-      <center><img src="logo.jpg" width="300" height="100"></center>
-      <form action="">
-        <center>
-          <h4>Crear nueva categoria</h4>
-        </center>
-        <label class="nombre">Nombre:</label>
-        <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingresar el nombre de la categoria"
-          required>
-        <input class="botons" type="submit" value="Registrar">
-      </form>
-      <center><a class="fa fa-home" style="font-size:24px" href="listaDeseos.html"></a></center>
-    </div>
-  </section>
+    <header class="main-header">
+        <div class="conteiner conteiner--flex">
+            <div class="main-header__conteiner">
+                <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <a href="index.html" class="enlace">
+                        <img src="logo.jpg" alt="Logo de la tienda" title="Logo" class="logo">
+                    </a>
+                    <ul>
+                        <li><a class="active" href="index.html">Inicio</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="login.html">Iniciar Sesión</a><i class="fa-solid fa-user"
+                                style="color: white; border-radius: 20px;"></i></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        </div>
+    </header>
+        <div class="row">
+            <div class="col-sm-6">
+                <section class="form-register">
+                    <div>
+                        <center><img src="logo.jpg" width="300" height="100"></center>
+                        <center>
+                            <h4>Crear nueva categoria</h4>
+                        </center>
+                        <form id="nuevaCategoria">
+                            <div class="form-group">
+                                <label for="id">ID</label>
+                                <input type="number" class="form-control" id="id" placeholder="Ingresar el ID de la categoria"
+                                required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingresar el nombre de la categoria"
+                                required>
+                            </div>
+                            <input class="botons" type="submit" value="Registrar">
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="col-sm-6">
+                <section class="form-register">
+                    <div>
+                        <center><img src="logo.jpg" width="300" height="100"></center>
+                        <center><h4>Categorias ingresadas</h4></center>
+                        <div id="tablaCategorias">
+                            <table class="tablaCat">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nombre categoria</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="categoriasTabla">
+                                </tbody>
+                            </table>
+                        </div>
+                        <button class="botons "id="mostrarTabla">Mostrar categorias</button>
+                        <center><a class="fa fa-home" style="font-size:24px" href="index.html"></a></center>
+                    </div>
+                </section>
+            </div>
+        </div>
+
 </body>
 
 </html>
