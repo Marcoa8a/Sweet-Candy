@@ -29,6 +29,7 @@ nav {
     width: 100%;
 }
 
+
 .enlace {
     position: absolute;
     padding: 20px 50px;
@@ -161,6 +162,7 @@ thead tr th {
     background-color: #730217;
     font-style: bold;
 }
+
 tbody tr td {
     width: 25%;
     text-align: center;
@@ -169,7 +171,8 @@ tbody tr td {
     font-size: 1em;
     color: aliceblue;
 }
-.row{
+
+.row {
     background-color: #730217;
 }
 
@@ -268,6 +271,12 @@ label {
 @media(max-width: 768px) {
 
     /*Estilos responsivos para formularios*/
+    .bodyUser .lista-datos{
+        width: 100%;
+    }
+    .bodyUser .datosUser{
+        width: 95%;
+    }
     .left-form {
         display: none;
     }
@@ -379,46 +388,220 @@ label {
 }
 
 /*Estilos infoUser.html*/
-.container {
-    width: 600px;
-    background: #292929;
-    padding: 50px;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    border-radius: 4px;
-    font-family: "Poppins";
-    color: white;
-    box-shadow: 7px 13px 37px #000;
-    padding: 70px 40px;
-    border: #292929 5px solid;
-    border-radius: 20px;
-}
-
-.btnUpdate {
+.headerUser {
     width: 100%;
-    background: #730217;
-    border: none;
+    height: 200px;
     padding: 12px;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    text-align: center;
 }
 
-table table-condensed {
-    border-color: 1px aqua;
+.headerUser .foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.foto img{
+    width: 100%;
+    position: relative;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
 }
 
-.controlsin {
-    display: block;
-    background: #292929;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    margin-left: -2%;
-    margin-top: 2%;
-    border: 2px solid #730217;
+.userName {
+    font-size: 15px;
+    margin-top: 14px;
+    color: aliceblue;
     font-family: "Poppins";
-    font-size: 18px;
-    color: white;
+    font-size: 1.5em;
+    display: block;
+    width: 100%;
+}
+
+.redes {
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.redes li {
+    display: inline-block;
+    margin: 20px;
+    width: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: "Poppins";
+    font-size: 1em;
+}
+
+a:hover {
+    color: blue;
+}
+
+.icons {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: cover;
+}
+
+.instagram {
+    background-image: url("./imagen/instagram.png");
+}
+
+.facebook {
+    background-image: url("./imagen/facebook.png");
+}
+
+.tiktok {
+    background-image: url("./imagen/tiktok.png");
+}
+.info{
+    padding: 10px;
+}
+.info h3{
+    color: aliceblue;
+    font-family: "Poppins";
+    font-size: 1.5em;
+}
+.info p{
+    color: aliceblue;
+    font-family: "Poppins";
+    font-size: 1em;
+}
+
+.perfil {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.bodyUser{
+    width: 70%;
+    position: relative;
+    max-width: 750px;
+}
+
+.bodyUser .texto{
+    color: #000;
+    font-size: 0.95em;
+}
+.bodyUser .reseña, .datosUser{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    background-color: #fff;
+    border-radius: 15px;
+    width: 100%;
+}
+.bodyUser .reseña{
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+.bodyUser .lista-datos{
+    width: 50%;
+    list-style: none;
+}
+.bodyUser .lista-datos li {
+    padding: 5px 0;
+}
+
+.bodyUser .lista-datos li>.icono {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+/*---Estilos footer---*/
+footer{
+    width: 100%;
+    padding: 20px 0px;
+    background-size: cover;
+    background-color: #060606;
+    color: #fff;
+}
+
+.container__footer{
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.box__footer{
+  display: inline-block;
+  flex-direction: column;
+  padding: 40px;
+  color: #fff;
+  margin-left: 70px;
+}
+
+
+.box__footer_social{
+  text-align: center;
+  color: #fff;
+}
+
+.box__footer_social h2{
+  color: #fff;
+}
+
+.box__footer .terms{
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #fff;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.box__footer .terms p{
+  color: #fff;
+}
+
+.box__footer h2{
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.box__footer a{
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.box__footer a:hover{
+  opacity: 0.8;
+}
+
+.box__footer a .fab{
+  font-size: 20px;
+}
+
+.box__copyright{
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+.box__copyright p{
+  margin-top: 20px;
+  color: #fff;
+}
+
+.box__copyright hr{
+  border: none;
+  height: 1px;
+  background-color: #fff;
 }
